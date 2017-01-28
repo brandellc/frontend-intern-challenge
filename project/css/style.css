@@ -1,0 +1,286 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+/* geral declarations */
+* {margin: 0%;}
+html { font-size: 20px; }
+
+body {
+	font-family: 'Roboto Slab', sans-serif;
+	position: relative;
+	
+}
+
+html, body, #wrap{ height: 100%; }
+
+/*hack to put footer*/
+body > #wrap {height: auto; min-height:100%;}
+
+/*header definitions (most siginificant -> less significant)*/
+.header {
+	background: #FFFFFF;
+	margin: 1% 2%;	
+}
+
+.header img{
+	width:8%;
+	margin-left:45%;
+}
+
+/*content definitions (same header pattern)*/
+.content {
+	margin:auto;
+	overflow:auto;
+	height:auto;
+	width:100%;
+}
+
+.shorten{
+	background-image: url("../../Assets/background-home.jpg");
+	background-size: cover;
+	color: #FFF;
+	text-align:center;
+	padding-top: 15%;
+	padding-bottom: 18%;
+}
+
+.shorten h2{
+	font-size: 3.3em; 
+}
+
+.shorten p {
+	padding-top:1.2%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.43em;
+}
+
+.shorten form{
+	font-size: 1.43em;
+	margin-top: 5.3%;	
+}
+
+#txtURL, #txtURL:focus {
+	height:2.0em;/*5.4%;*/
+	font-family: 'Roboto', sans-serif;
+	font-size:0.8em;
+	text-decoration:none;
+	border-style: none none solid none;
+	border-color: #EA611F;
+	border-width:medium;
+	width:36%;
+	padding-bottom: 0.3%;
+	background: none;
+	color: #EA611F;
+}
+
+#txtURL:focus {
+	outline:none;
+}
+
+#txtURL::-webkit-input-placeholder{
+	color:#EA611F !important;
+}
+
+#txtURL:-moz-placeholder{
+	color:#EA611F !important;
+} 
+
+#txtURL:-ms-input-placeholder{
+	color:#EA611F !important;
+} 
+
+#txtURL span{
+	margin-left: -1em;
+}
+#btnShort {
+	width:6em;
+	font-family: 'Roboto', sans-serif;
+	font-size:1em;
+	background-color: #EA611F; 	
+	padding: 0.6% 0.9%;
+	color:#FFFFFF;
+	border: none;
+	text-decoration:none;
+	font-weight: bold;
+	margin:0;
+	margin-left:0.6%;
+	cursor: pointer;
+}
+
+#btnShort:focus{
+	outline:none;
+ }
+
+#btnClose{
+	font-family :'Roboto Slab', sans-serif;
+	cursor:pointer;
+	margin-left: -1.0em; 
+	margin-right:0.2em;
+	display: none;
+}
+.ranking{
+	padding-top: 3%;
+	color:#AA1423;
+	text-align: center;
+	padding-bottom: 5%;
+}
+
+.ranking h2{
+	font-size: 2.5em;
+	font-weight: normal;
+}
+
+.table {
+	margin-top:2%;
+	margin-left:35%;
+	display: block;
+	width: 50%;
+}
+
+.row {
+	clear: both;
+}
+
+.cellURL, .cellHits, .cellLastURL, .cellLastHits {
+	float:left;
+	overflow:hidden;
+	width:15%;
+	height: 1.8em;
+	padding: 0.6%;
+	border-bottom: solid medium #eee; 
+}
+
+.cellURL, .cellLastURL{
+	text-align: left;
+	width:50%;
+	font-weight:bold; 
+}
+
+.cellHits, .cellLastHits {
+	text-align: right;
+	color :#777;
+	
+}
+.cellLastURL, .cellLastHits{
+	border:none;
+}
+
+
+.table:after{
+	visibility:hidden;
+	display:block;
+	font-size: 0;
+	content: " ";
+	clear:both;
+	height:0;
+}
+
+
+.hits{
+	background-color: #eee;
+	width:100%;
+	text-align:center;
+	color: #AA1423;
+	padding-bottom: 6%;
+}
+
+
+#triangle{
+	width:0;
+	height:0;
+	border-top: 3em solid #FFF;
+   	border-left: 3em solid transparent; 
+   	border-right: 3em solid transparent;
+	margin-left:37.8em;
+	margin-bottom: 2%; 
+}
+
+.hits h2{
+	font-size: 2.5em;
+	font-weight: normal;
+}
+
+#showHits{
+	background-color : #FFF;
+	width: 13%;
+	margin-left:43.5%;
+	font-size : 2.0em;
+	border:0.07em groove #eee;	
+	border-radius: 4%;
+	margin-top: 1.5%;
+	margin-bottom: 0.9%;
+}
+.hits h3{
+	font-family : 'Roboto Slab', sans-serif;
+	color: #777;
+	font-size: 1.0em;
+	font-weight: normal;
+}
+
+
+/*footer definitions (same of other ones above)*/
+.footer{
+	position : relative;
+	clear: both;
+	right:0;
+	bottom:0;
+	left:0;
+	padding:2%;
+	text-align: left;
+	background-color:#FFFFFF;	
+}
+
+.footer a:hover, a, a:visited{
+	font-size: 1.5em;
+	color : #AA1423;
+	margin-left:14%;
+	text-decoration: none;
+	 
+}
+
+.icons {
+	float: right;
+	padding-right: 15%;
+	width: 5.6em;
+}
+
+.twitter-icon {
+}
+
+.fb-icon {
+}
+
+
+/*Setting responsive fonts*/
+@media(max-width: 2560px) {
+	html{
+		font-size: 30px;
+	}
+	
+	#triangle{
+		margin-left:39.7em;
+	}
+}
+
+
+@media(max-width: 1440px) {
+	html{
+		font-size: 16px;
+	}
+	
+	#triangle{
+		margin-left:46.0%;
+	}
+}
+
+@media(max-width: 1024px) {
+	html{
+		font-size: 14px;
+	}
+	
+	#triangle{
+		margin-left:45.8%;
+	}
+}
+
